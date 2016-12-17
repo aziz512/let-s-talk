@@ -1,54 +1,104 @@
 body {
-  background-image:
-    linear-gradient(
-      #ffff66, #f06d06
-    );
-    height:100vh;
+    background-image: linear-gradient( #ffff66, #f06d06);
+    height: 100vh;
     background-attachment: fixed;
     font-family: 'Montserrat', serif;
-        font-size: 14px;
+    font-size: 14px;
 }
-#issuesBox{
-    margin:0 auto;
+
+#characters {
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+    text-align: center;
+}
+
+#issuesBox {
+    margin: 0 auto;
     max-width: 75%;
     text-align: center;
 }
-#player{
-   margin-right:75%; 
-   float:left;
-   display:inline-block;
 
+#player {
+    vertical-align: top;
+    display: inline-block;
 }
-#npc{
-    margin-left:75%;
-    float:right;
-   display:inline-block;
-   margin: 0px;
+
+#playerImg {
 }
-.choiceBox{
- margin:0 auto;
- max-width:50%;
+
+#npc {
+    display: inline-block;
+    margin: 0px;
+    vertical-align: top;
 }
+
+#npcImg {}
+
+.choiceBox {
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: #ffffff;
+    max-width: 80%;
+    padding:20px;
+}
+
 .speech-bubble {
     background-color: #f8f8f8;
     border: 2px solid #000000;
-    border-radius: 10px; 
+    border-radius: 10px;
     text-align: center;
     padding: 30px;
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 75%;
+    position: relative;
 }
+
 .speech-bubble .arrow {
+    width: 0px;
     border-style: solid;
     position: absolute;
-}
- 
-.bottom {
     border-color: #000000 transparent transparent transparent;
     border-width: 10px 10px 0px 10px;
-    bottom: -15px;
+    bottom: -9px;
+    margin-left: 870px;
 }
-#nextButton{
+
+#nextButton {
     float: right;
     margin-right: 100px;
+}
+
+#options {
+    display: inline-block;
+    width: 60%;
+}
+
+#response {
+    display:block;
+    width:60%;
+    display:none;
+    margin:0 auto;
+    text-align: center;
+}
+#response-message{
+    border: 1px black solid;
+    background: white;
+    border-radius: 3px;
+    vertical-align: top;
+    padding: 10px;
+    margin-right: 0;
+    width:90%;
+    display:inline-block;
+}
+#response-arrow{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    margin-left: -5px;
 }
