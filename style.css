@@ -1,0 +1,54 @@
+body {
+  background-image:
+    linear-gradient(
+      #ffff66, #f06d06
+    );
+    height:100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', serif;
+        font-size: 14px;
+}
+#issuesBox{
+    margin:0 auto;
+    max-width: 75%;
+    text-align: center;
+}
+#player{
+   margin-right:75%; 
+   float:left;
+   display:inline-block;
+
+}
+#npc{
+    margin-left:75%;
+    float:right;
+   display:inline-block;
+   margin: 0px;
+}
+.choiceBox{
+ margin:0 auto;
+ max-width:50%;
+}
+.speech-bubble {
+    background-color: #f8f8f8;
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    text-align: center;
+    padding: 30px;
+    margin:0 auto;
+    max-width: 75%;
+}
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+ 
+.bottom {
+    border-color: #000000 transparent transparent transparent;
+    border-width: 10px 10px 0px 10px;
+    bottom: -15px;
+}
+#nextButton{
+    float: right;
+    margin-right: 100px;
+}

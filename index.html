@@ -2,9 +2,45 @@
 <html>
     <head>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
-        Hey it's working
+        <div id="content">
+            <!--This will be the speechbubble/display area for Issues/Questions, at top-center -->
+             <div class="speech-bubble">
+                 <div class="arrow bottom right"></div>
+                <span id="question"></span> 
+                
+            </div>
+            
+            <div id="characters">
+            <div id="player">
+                <!-- This is the player "sprite". On the left -->
+                <img id="playerImg" src= "playerImg.png"></img> <!-- Put player image here -->
+            </div>
+            
+            <div id="npc">
+                <!-- This is the "NPC" a.k.a. non-player; Poses the questions/issues. -->
+                <img id="npcImg" src= "npcImg.png"></img> <!-- Put npc image here; Possibly diff kinds? Use just one for now. Varied = needs js work if done later if we have time -->
+            </div>
+            <div id='options'>
+            </div>
+            <div id="choiceBox1" class="choiceBox">
+                <!-- The box where the first chioce will show -->
+            </div>
+            <div id="choiceBox2" class="choiceBox">
+                <!-- The box where second choice will show -->
+            </div>
+            <div id="choiceBox3" class="choiceBox">
+                <!-- The box where third choice will show -->
+            </div>
+            </div>
+          <button id="nextButton">Next</button><!--Please style this button -->
+          
+        </div>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
